@@ -19,10 +19,10 @@ public class CurrencyConverterController {
         return "list";
     }
     @PostMapping
-    public ModelAndView change(Model model ,@RequestParam  String usd, String rate) {
-        model.addAttribute("usd",usd);
+    public ModelAndView change(Model model ,@RequestParam String usd, String rate) {
+//        model.addAttribute("usd",usd);
         model.addAttribute("saveUsd",usd);
-        model.addAttribute("rate",rate);
+////        model.addAttribute("rate",rate);
         model.addAttribute("saveRate",rate);
         return new ModelAndView("list", "vnd", service.change(usd, rate));
     }

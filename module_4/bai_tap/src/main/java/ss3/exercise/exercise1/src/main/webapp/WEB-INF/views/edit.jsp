@@ -13,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-<form:form action="" method="post" modelAttribute="language">
+<form:form action="" method="post" modelAttribute="language" >
     <center>
     <form:hidden path="id"/>
    <p><form:select path="language" items="${stringLanguage}"></form:select></p>

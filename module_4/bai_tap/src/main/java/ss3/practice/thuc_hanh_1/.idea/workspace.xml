@@ -1,10 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="976c6b91-e827-4451-936c-dc193f8afb0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/modules/exercise1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/build/libs/exercise1-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/controller/LanguageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/model/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/repository/ILanguageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/repository/impl/LanguageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/service/ILanguageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/java/vinhodas/service/impl/LanguageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/webapp/WEB-INF/views/language.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../exercise/exercise1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/thuc_hanh_1_main_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/thuc_hanh_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vinhodas/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vinhodas/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -30,6 +112,7 @@
       <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise1/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh_2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh_2/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh_2/.idea/workspace.xml" afterDir="false" />
@@ -65,14 +148,126 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="2HsyHxIrignfjBnwfGE3YzFUc6Q" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../../../module3/C0722G1_Vinh_Module_3/module_3/src/final/final_reply" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_REPLY\module4\C0722G1_Vinh_Module4\module_4\bai_tap\src\main\java\ss3\practice\thuc_hanh_1\src\main\java" />
+      <recent name="D:\JAVA_REPLY\module4\C0722G1_Vinh_Module4\module_4\bai_tap\src\main\java\ss3\practice\thuc_hanh_1\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <deployment>
+        <artifact name="thuc_hanh_1.main:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_thuc_hanh_1_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61896" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="thuc_hanh_1.main:war exploded" />
+        </option>
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -84,8 +279,103 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669088001795</updated>
-      <workItem from="1669088007078" duration="3000" />
+      <workItem from="1669088007078" duration="5203000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="288" y="6" key="#Project_Structure" timestamp="1669088133520">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="288" y="6" key="#Project_Structure/78.0.1458.864@78.0.1458.864" timestamp="1669088133520" />
+    <state x="262" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1669090797111">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="262" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/78.0.1458.864@78.0.1458.864" timestamp="1669090797111" />
+    <state x="623" y="307" width="613" height="248" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1669090818901">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="623" y="307" width="613" height="248" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/78.0.1458.864@78.0.1458.864" timestamp="1669090818901" />
+    <state x="613" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1669088285697">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="613" y="148" key="#com.intellij.ide.util.MemberChooser/78.0.1458.864@78.0.1458.864" timestamp="1669088285697" />
+    <state x="588" y="186" key="FileChooserDialogImpl" timestamp="1669101750418">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="588" y="186" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1669101750418" />
+    <state width="969" height="224" key="GridCell.Tab.0.bottom" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.0.center" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.0.left" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.0.right" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.1.bottom" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.1.bottom/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.1.center" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.1.center/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.1.left" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.1.left/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.1.right" timestamp="1669101899458">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.1.right/78.0.1458.864@78.0.1458.864" timestamp="1669101899458" />
+    <state width="969" height="224" key="GridCell.Tab.2.bottom" timestamp="1669101899459">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.2.bottom/78.0.1458.864@78.0.1458.864" timestamp="1669101899459" />
+    <state width="969" height="224" key="GridCell.Tab.2.center" timestamp="1669101899459">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.2.center/78.0.1458.864@78.0.1458.864" timestamp="1669101899459" />
+    <state width="969" height="224" key="GridCell.Tab.2.left" timestamp="1669101899459">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.2.left/78.0.1458.864@78.0.1458.864" timestamp="1669101899459" />
+    <state width="969" height="224" key="GridCell.Tab.2.right" timestamp="1669101899459">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="969" height="224" key="GridCell.Tab.2.right/78.0.1458.864@78.0.1458.864" timestamp="1669101899459" />
+    <state x="288" y="6" key="SettingsEditor" timestamp="1669090824044">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="288" y="6" key="SettingsEditor/78.0.1458.864@78.0.1458.864" timestamp="1669090824044" />
+    <state x="248" y="42" key="new project wizard" timestamp="1669098914469">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="248" y="42" key="new project wizard/78.0.1458.864@78.0.1458.864" timestamp="1669098914469" />
   </component>
 </project>
