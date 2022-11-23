@@ -28,30 +28,39 @@
         <td th:text="${product.producer}"></td>
         <td ><a th:href="@{/product/edit(id=${product.getId()})}">Edit</a></td>
         <td >
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete(${product.getId())}">
-                <a th:href="@{/product/delete(id=${product.getId()})}" class="btn btn-danger">Delete</a>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete" th:onclick="'javascript:getId(\''+${product.id}+'\',\''+${product.name}+'\');'">
+                Delete
+<!--                <a th:href="@{/product/delete(id=${product.getId()})}" class="btn btn-danger">Delete</a>-->
             </button>
-            <!-- Modal -->
-<!--            <div class="modal fade " id="delete${customer.getId()}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--                <div class="modal-dialog ">-->
-<!--                    <div class="modal-content bg-white">-->
-<!--                        <div class="modal-header">-->
-<!--                            <h5 class="modal-title" id="exampleModalLabel">Delete</h5>-->
-<!--                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                        </div>-->
-<!--                        <div class="modal-body" style="color: #000 ; text-decoration-color: white " >-->
-<!--                            Bạn có muốn xóa <strong class="text-danger">${customer.getName()}</strong>-->
-<!--                            không ?-->
-<!--                        </div>-->
-<!--                        <div class="modal-footer">-->
-<!--                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--                            <a th:href="@{/delete(id=${product.getId()})}" class="btn btn-danger">Delete</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
+<!--             Modal-->
+            <div class="modal fade " id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="modal-content bg-white">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" style="color: #000 ; text-decoration-color: white " >
+                            Bạn có muốn xóa <strong style="color: orange" id="nameDelete" ></strong>
+                            không ?
+                            <input hidden id="idDelete" name="id"></input>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a th:href="@{/product/delete(id=${product.getId()})}" class="btn btn-danger">Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </td>
     </tr>
 </table>
 </body>
+<script th:inline="javascript">
+    function getId(id, name){
+        document.getElementById("nameDelete").innerText = name;
+        document.getElementById("idDelete").value = id
+    }
+</script>
 </html>
