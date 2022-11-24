@@ -5,7 +5,7 @@ import vinhodas.model.Product;
 import java.util.List;
 
 public interface IProductService {
-    List<Product> findAll();
+    List<Product> findAll( );
 
     Product findById(Integer id);
     
@@ -14,8 +14,9 @@ public interface IProductService {
 
     void add(Product product);
 
-    List<Product> findByName(String name);
 
 
     void edit(Product product);
+
+    List<Product> search(String nameSearch);
 }

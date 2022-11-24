@@ -94,18 +94,7 @@ public class ProductRepository implements IProductRepository {
         }
     }
 
-    @Override
-    public List<Product> search(String name) {
-    List<Product> productSearch =new ArrayList<>();
-//        for (Product product: products
-//             ) {
-//            if (product.getName().contains(name)){
-//                productSearch.add(product);
-//            }
-//
-//        }
-        return productSearch;
-    }
+
 
     @Override
     public void edit(Product product) {
@@ -122,5 +111,21 @@ public class ProductRepository implements IProductRepository {
                 session.close();
             }
         }
+    }
+
+    @Override
+    public List<Product> search(String nameSearch) {
+        List<Product> productList = new ArrayList<>();
+        Session session = null;
+
+        try {
+            session = ConnectionUtil.sessionFactory.openSession();
+            productList = session.createQuery("from Product where name like :name").setParameter("name","%"+nameSearch+"%").getResultList();
+        }finally {
+            if (session != null){
+                session.close();
+            }
+        }
+        return productList;
     }
 }
