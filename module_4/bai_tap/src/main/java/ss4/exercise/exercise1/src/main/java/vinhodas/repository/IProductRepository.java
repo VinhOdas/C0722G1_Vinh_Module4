@@ -14,4 +14,6 @@ public interface IProductRepository {
     void delete(Integer id);
 
     void add(Product product);
+
+    List<Product> search(String name);
 }

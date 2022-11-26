@@ -61,4 +61,10 @@ public class ProductController {
             return "redirect:/product";
 
     }
+//    @GetMapping("/product")
+//    String search(Model model, String name){
+//     List<Product> products =  productService.findByName(name);
+//     model.addAttribute("products",products);
+//     return "product/list";
+//    }
 }
