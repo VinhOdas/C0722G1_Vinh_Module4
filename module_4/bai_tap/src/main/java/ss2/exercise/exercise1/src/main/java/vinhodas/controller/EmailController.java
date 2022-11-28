@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class SandwichController {
+public class EmailController {
     @GetMapping("/")
-    public String sandwich() {
-        return "sandwich";
+    public String email() {
+        return "email";
     }
     @RequestMapping("/save")
     public String save(@RequestParam("condiment") String[] condiment, Model model) {
         model.addAttribute("condiment",condiment);
-        return "sandwich";
+        return "email";
     }
 }
