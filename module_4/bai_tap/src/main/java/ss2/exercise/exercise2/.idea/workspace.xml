@@ -20,35 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33bf81b2-6d5a-4e39-999f-7e18b8a7e4a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/build/classes/java/main/vinhodas/controller/CurrencyConverterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/build/classes/java/main/vinhodas/controller/CurrencyConverterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/build/libs/currency_converter_app-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/build/libs/currency_converter_app-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/src/main/java/vinhodas/controller/CurrencyConverterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/src/main/java/vinhodas/controller/CurrencyConverterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/excercise/currency_converter_app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/repository/ICustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/repository/impl/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/repository/impl/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/service/ICustomerSerice.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/service/ICustomerSerice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/service/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/java/vinhodas/service/impl/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/views/customer/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/views/customer/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/views/customer/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/customer_list_management_application/src/main/webapp/WEB-INF/views/customer/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/practice/test/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/thuc_hanh_2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/thuc_hanh_2/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/thuc_hanh_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/thuc_hanh_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practice/thuc_hanh_2/src/main/java/vinhodas/controller/EmailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../practice/thuc_hanh_2/src/main/java/vinhodas/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/repository/impl/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/service/impl/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/repository/impl/BlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/repository/impl/BlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/service/impl/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/java/com/vinhodas/blog/service/impl/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/a/blog/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/blog/blog/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/a/category/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/blog/category/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/a/category/display.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/blog/category/display.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/a/category/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/blog/category/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/a/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss6/exerice/exercise_1_reply_blog/src/main/resources/templates/blog/category/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../../ss1/test/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../../ss1/test/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../../../ss1/test/.idea/gradle.xml" beforeDir="false" />
@@ -109,7 +92,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -211,6 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669014572326</updated>
       <workItem from="1669014576313" duration="2502000" />
+      <workItem from="1669610433299" duration="10000" />
     </task>
     <servers />
   </component>
@@ -227,6 +211,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="262" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1669015468857">
@@ -237,6 +222,10 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="613" y="138" key="#com.intellij.ide.util.MemberChooser/78.0.1458.864@78.0.1458.864" timestamp="1669015233689" />
+    <state x="588" y="187" key="FileChooserDialogImpl" timestamp="1669610441917">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="588" y="187" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1669610441917" />
     <state width="969" height="224" key="GridCell.Tab.0.bottom" timestamp="1669023713866">
       <screen x="78" y="0" width="1458" height="864" />
     </state>

@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5b84ef8a-c085-4e2e-92ea-c1a29fc8dcfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/6.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -9,9 +51,11 @@
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/build/classes/java/main/vinhodas/controller/CurrencyConverterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/build/classes/java/main/vinhodas/controller/CurrencyConverterController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/build/libs/currency_converter_app-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/build/libs/currency_converter_app-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/src/main/java/vinhodas/controller/CurrencyConverterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/src/main/java/vinhodas/controller/CurrencyConverterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/excercise/currency_converter_app/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/src/main/java/vinhodas/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/src/main/java/vinhodas/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/src/main/java/vinhodas/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai_tap/src/main/java/ss1/practice/customer_list_management_application/src/main/java/vinhodas/model/Customer.java" afterDir="false" />
@@ -56,10 +100,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="ProjectId" id="2HqCTWngWIbVxDYE6GRM1q984ws" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_REPLY\module4\C0722G1_Vinh_Module4\module_4\ss2\practice\thuc_hanh_1\src\main\webapp" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,8 +129,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669003234923</updated>
-      <workItem from="1669003239561" duration="1000" />
+      <workItem from="1669003239561" duration="304000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="248" y="42" key="new project wizard" timestamp="1669003543154">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state x="248" y="42" key="new project wizard/78.0.1458.864@78.0.1458.864" timestamp="1669003543154" />
   </component>
 </project>
