@@ -16,6 +16,6 @@ public class BlogService implements IBlogService {
 
     @Override
     public Page<Blog> findAll(Pageable pageable) {
-        return blogRepository.findAll(pageable);
+        return blogRepository.findAll((org.springframework.data.domain.Pageable) pageable);
     }
 }

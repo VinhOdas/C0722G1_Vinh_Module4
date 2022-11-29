@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 th:if="${message}">
+    <span th:text="${message}"></span>
+</h2>
+<a href="/">Back to List song</a>
+<h3 style="text-align: center">Add New song</h3>
+
+<form action="/create" method="post" th:object="${songDto}">
+    <table>
+        <input type="hidden" th:field="*{id}"/>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" th:field="*{title}"/>
+                <p style="color: red"
+                   th:if="${#fields.hasErrors('title')}"
+                   th:errors="*{title}"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Artist</td>
+            <td><input type="text" th:field="*{artist}"/>
+                <p style="color: red"
+                   th:if="${#fields.hasErrors('artist')}"
+                   th:errors="*{artist}"></p>
+            </td>
+        </tr>
+        <tr>
+            <td>Kind Of Music</td>
+            <td><input type="text" th:field="*{kindOfMusic}"/>
+                <p style="color: red"
+                   th:if="${#fields.hasErrors('kindOfMusic')}"
+                   th:errors="*{kindOfMusic}"></p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Save"/></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
