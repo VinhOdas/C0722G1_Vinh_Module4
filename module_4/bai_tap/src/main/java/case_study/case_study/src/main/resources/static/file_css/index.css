@@ -1,0 +1,255 @@
+body {
+    width: 100vw;
+    height: fit-content;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 124px;
+    padding: 12px 0;
+}
+
+.header__logo {
+    height: 100px;
+}
+
+.header__contact {
+    width: 600px;
+}
+
+.wrapper {
+    margin-left: 30px;
+    width: 1160px;
+}
+
+.navbar {
+    background-color: #046056;
+    height: 70px;
+    padding: 0;
+    padding-left: 140px;
+}
+
+.list {
+    height: 100%;
+}
+
+.list__item {
+    position: relative;
+    font-size: 14px;
+    padding: 0 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.list__item > a {
+    font-size: 16px !important;
+}
+
+.list__item:hover > a {
+    color: white;
+}
+
+.list__item:hover > .sub__list {
+    visibility: visible;
+}
+
+.sub__list {
+    min-width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.sub__list > li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #777;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.sub__list > li > a {
+    color: black;
+}
+
+.sub__list > li:hover > a {
+    color: white;
+}
+
+.sub__list > li:hover {
+    background-color: #046056;
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
+.address {
+    max-width: 300px;
+}
+
+/*p, a {*/
+/*    font-size: 17px !important;*/
+/*    line-height: 1.6em;*/
+/*}*/
+
+span {
+    color: #046056;
+}
+
+.carousel-item > img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*.main {*/
+/*    background: url("../images/background_furama.jpeg");*/
+/*    min-height: 1050px;*/
+/*}*/
+
+.main__title {
+    position: absolute;
+    top: 17%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 24px !important;
+    width: 500px;
+}
+
+.footer {
+    background-color: #e1e1e1;
+    color: #707070;
+    height: 350px;
+    padding: 45px 15px 25px;
+}
+
+.img-label {
+    background-color: #af936c;
+    color: white;
+    padding: 10px;
+    font-size: 12px !important;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    transform: translate(-30%, 50%);
+}
+
+.main-about {
+    padding: 40px 0;
+}
+
+.main-about__image {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.main-about__text {
+    width: 600px;
+    padding: 64px;
+}
+
+.main-about__title {
+    color: #363636;
+    font-size: 30px !important;
+    line-height: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.main-about__desc, .main-about__label {
+    color: #363636;
+    font-size: 14px !important;
+    line-height: 21px;
+    font-weight: 300;
+    margin: 0 auto 10px;
+}
+
+.main-about__label {
+    font-weight: 600;
+    color: #af936c;
+}
+
+.main-about__buttons {
+    gap: 0 10px;
+}
+
+.btn {
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #af936c !important;
+    border: 1px solid #af936c;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border: 1px solid #af936c;
+    box-shadow: none;
+}
+
+.btn-outline-primary {
+    background-color: white;
+    color: #af936c !important;
+    border: 1px solid #af936c !important;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #af936c;
+    color: white !important;
+    box-shadow: none;
+}
+
+.festival {
+    /*background-image: url("../images/festival.jpeg");*/
+    display: flex;
+    clear: both;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2vw;
+    min-height: 30vw;
+    opacity: 1;
+}
+
+/*.festival-container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*    width: 1080px;*/
+/*    height: 1920px;*/
+/*}*/
+
+.explore__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.footer__brand-logo {
+    height: 26px;
+    width: auto;
+}
+
+.tbody tr {
+    text-align: center;
+}
+
+Footer
