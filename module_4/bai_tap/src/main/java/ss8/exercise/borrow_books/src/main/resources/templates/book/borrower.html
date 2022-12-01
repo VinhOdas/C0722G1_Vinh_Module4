@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="body-mid">
+    <div class="body-mid-right">
+
+        <table class="table table-white" style="text-align: center" border="1">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name Book</th>
+                <th>Amount</th>
+                <th>Reply Book</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="data, stt: ${oderList}">
+                <td th:text="${stt.count}"></td>
+                <td th:text="${data.name}"></td>
+                <td th:text="${data.borrowedDate}"></td>
+                <td >
+<!--                    <a th:href="@{/oder/{id}(id = ${data.id})}">Oder</a>-->
+                </td>
+                <td ></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

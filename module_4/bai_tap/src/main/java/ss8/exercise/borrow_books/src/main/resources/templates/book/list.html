@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="/borrower">List Oder</a>
+</div>
+<div style="text-align: center">
+    <th:block th:if="${mess}">
+        <p style="color: red;font-weight: bold" th:text="${mess}"></p>
+    </th:block>
+</div>
+<div style="text-align: center">
+    <th:block th:if="${mess1}">
+        <p style="color: red;font-weight: bold" th:text="${mess1}"></p>
+    </th:block>
+</div>
+
+<div class="body-mid">
+    <div class="body-mid-right">
+
+        <table class="table table-white" style="text-align: center" border="1">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name Book</th>
+                <th>Amount</th>
+                <th>Borrower Book</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="data, stt: ${bookList}">
+                <td th:text="${stt.count}"></td>
+                <td th:text="${data.nameBook}"></td>
+                <td th:text="${data.amount}"></td>
+                <td >
+                    <a th:href="@{/oder/{id}(id = ${data.id})}">Oder</a>
+                </td>
+                <td ></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
