@@ -29,7 +29,7 @@ public class BorrowerBookController {
     }
 
     @GetMapping("/oder/{id}")
-    String showOder(@PathVariable Integer id, RedirectAttributes redirectAttributes,Model model) {
+    String showOder(@PathVariable Integer id, RedirectAttributes redirectAttributes, Model model) {
 
 
         Optional<Book> book = borrowerBookService.findById(id);
@@ -38,33 +38,37 @@ public class BorrowerBookController {
 
             Book bookATBC = book.get();
             bookATBC.setAmount(book.get().getAmount() - 1);
+            if (!(book.get().getAmount() == -1)) {
+
             Oder oder = new Oder();
-            int code = (int) (Math.random() * (99999 -10000) + 10000);
+            int code = (int) (Math.random() * (99999 - 10000) + 10000);
+
             oder.setId(code);
             long millis = System.currentTimeMillis();
+
             oder.setBorrowedDate(new java.sql.Date(millis));
             String name = book.get().getNameBook();
+
             oder.setName(name);
-            if (!(book.get().getAmount() == -1)){
-                oderService.save(oder);
+//            oderService.save(oder);
                 List<Oder> oderList = bookATBC.getList();
                 oderList.add(oder);
                 book.get().setList(oderList);
                 borrowerBookService.save(bookATBC);
                 redirectAttributes.addFlashAttribute("mess", "Mượn sách thành công");
             }
-            model.addAttribute("mess1", "Hết sách");
             return "redirect:/";
 
         }
-            return "book/list";
+        return "book/list";
 
 
     }
+
     @GetMapping("/borrower")
-    String showborrowerList(Model model){
+    String showborrowerList(Model model) {
         List<Oder> oderList = oderService.findAllOder();
-        model.addAttribute("oderList",oderList);
+        model.addAttribute("oderList", oderList);
         return "book/borrower";
     }
 
