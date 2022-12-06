@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/blog")
 public class BlogController {
     @Autowired
@@ -29,19 +30,36 @@ public class BlogController {
         for (Blog x : blogDtos) {
             BlogDto blogDto = new BlogDto();
             BeanUtils.copyProperties(x, blogDto);
-            blogDto.setCategoryId(x.getCategory().getId());
             blogDtoList.add(blogDto);
         }
         return new ResponseEntity<>(blogDtoList, HttpStatus.OK);
     }
     @PostMapping("")
-    public  ResponseEntity create(@RequestBody BlogDto blogDto){
+    public  ResponseEntity<Void> create(@RequestBody BlogDto blogDto){
             Blog blog = new Blog();
             BeanUtils.copyProperties(blogDto, blog);
            blogService.save(blog);
-           return new ResponseEntity<>(blog, HttpStatus.OK);
+           return new ResponseEntity<>(HttpStatus.OK);
 
     }
+    @GetMapping("/search")
+    public ResponseEntity<List<BlogDto>> searchList(@RequestParam String searchName){
+        List<Blog> blogDtos = blogService.findbyName(searchName);
+        if (blogDtos.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        List<BlogDto> blogDtoList = new ArrayList<>();
+
+        for (Blog x : blogDtos) {
+            BlogDto blogDto = new BlogDto();
+            BeanUtils.copyProperties(x, blogDto);
+            blogDtoList.add(blogDto);
+        }
+        return new ResponseEntity<>(blogDtoList, HttpStatus.OK);
+    }
+
+
+
 
 
 

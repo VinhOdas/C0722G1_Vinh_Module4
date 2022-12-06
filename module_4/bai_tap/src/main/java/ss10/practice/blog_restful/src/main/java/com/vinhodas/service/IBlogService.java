@@ -13,4 +13,6 @@ public interface IBlogService {
     void save(Blog blog);
 
     Optional<Blog> findById(Integer id);
+
+    List<Blog> findbyName(String searchName);
 }

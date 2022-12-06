@@ -15,7 +15,6 @@ public class Category {
     private Integer id;
     private String name;
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-    @JsonBackReference
     private Set<Blog> blogs;
 
     public Category() {
