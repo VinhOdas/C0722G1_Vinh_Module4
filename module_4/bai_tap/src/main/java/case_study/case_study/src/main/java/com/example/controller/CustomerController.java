@@ -14,10 +14,13 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
+import java.util.Optional;
 
 @Controller
+@RequestMapping("/customer")
 public class CustomerController {
     @Autowired
     ICustomerService customerService;
@@ -27,7 +30,7 @@ public class CustomerController {
         return customerService.findAllCustomerType();
     }
 
-    @GetMapping("/customer")
+    @GetMapping
     String showList(
             @RequestParam(value = "searchName", defaultValue = "") String searchName,
             @PageableDefault(page = 0, value = 2) Pageable pageable,
@@ -61,6 +64,30 @@ public class CustomerController {
         model.addAttribute("customerList", customerDto);
         model.addAttribute("message", "Add new Successful!");
         return "redirect:/customer";
+    }
+    @GetMapping("/edit/{id}")
+    String showFormEdit(@PathVariable int id, Model model){
+        Optional<Customer> customer = customerService.findCustomerById(id);
+        CustomerDto customerDto = new CustomerDto();
+        BeanUtils.copyProperties(customer.get(),customerDto);
+        model.addAttribute("customerDto",customerDto);
+        return "customer/edit";
+    }
+    @PostMapping("/edit")
+    public ModelAndView edit(@ModelAttribute @Validated CustomerDto customerDto, BindingResult bindingResult) {
+        new CustomerDto().validate(customerDto, bindingResult);
+        if (bindingResult.hasFieldErrors()) {
+            ModelAndView modelAndView = new ModelAndView("customer/edit");
+            modelAndView.addObject("customerDto", customerDto);
+            return modelAndView;
+        }
+        Customer customer = new Customer();
+        BeanUtils.copyProperties(customerDto, customer);
+        customerService.save(customer);
+        ModelAndView modelAndView = new ModelAndView("customer/edit");
+        modelAndView.addObject("customerDto", customerDto);
+        modelAndView.addObject("message", "Customer edited successfully");
+        return modelAndView;
     }
 
 
