@@ -3,8 +3,8 @@ package com.example.service;
 import com.example.model.Customer;
 import com.example.model.CustomerType;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import java.awt.print.Pageable;
 import java.util.List;
 
 public interface ICustomerService {

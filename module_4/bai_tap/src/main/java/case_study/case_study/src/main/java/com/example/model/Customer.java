@@ -17,7 +17,7 @@ public class Customer {
     @Column(columnDefinition = "int default 1")
     private int deleteStatus = 1;
     @ManyToOne(cascade = CascadeType.REMOVE)
-    @JoinColumn(name = "customer_type_id",referencedColumnName = "id")
+    @JoinColumn(name = "customer_type_id", referencedColumnName = "id")
     private CustomerType customerTypeId;
 
     public Customer() {

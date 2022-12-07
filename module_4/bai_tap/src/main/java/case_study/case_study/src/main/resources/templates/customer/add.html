@@ -10,19 +10,19 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-<form method="post" th:object="${customerList}" >
+<form method="post" th:object="${customerList}">
     <div class="mb-5 mt-3 text-center fst-italic">
         <h1>Add New Customer Form</h1>
     </div>
     <div class="mb-3">
         <label for="nameCustomer" class="form-label fw-bold fst-italic">Name Customer:</label>
         <input th:field="*{name}" type="text" class="form-control" id="nameCustomer" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{name}" th:if="${#fields.hasErrors('name')}"> </p>
+        <p style="color: red" th:errors="*{name}" th:if="${#fields.hasErrors('name')}"></p>
     </div>
     <div class="mb-3">
         <label for="birthDay" class="form-label fw-bold fst-italic"> birthDay:</label>
         <input th:field="*{birthDay}" type="text" class="form-control" id="birthDay" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{birthDay}" th:if="${#fields.hasErrors('birthDay')}"> </p>
+        <p style="color: red" th:errors="*{birthDay}" th:if="${#fields.hasErrors('birthDay')}"></p>
     </div>
     <div class="mb-3">
         <label for="genderCustomer" class="form-label fw-bold fst-italic">Gender:</label>
@@ -31,27 +31,27 @@
             <option value="1">Male</option>
             <option value="2">LGBT</option>
         </select>
-        <p style="color: red" th:errors="*{gender}" th:if="${#fields.hasErrors('gender')}"> </p>
+        <p style="color: red" th:errors="*{gender}" th:if="${#fields.hasErrors('gender')}"></p>
     </div>
     <div class="mb-3">
         <label for="idCard" class="form-label fw-bold fst-italic">idCard :</label>
         <input th:field="*{idCard}" type="text" class="form-control" id="idCard" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{idCard}" th:if="${#fields.hasErrors('idCard')}"> </p>
+        <p style="color: red" th:errors="*{idCard}" th:if="${#fields.hasErrors('idCard')}"></p>
     </div>
     <div class="mb-3">
         <label for="phoneNumber" class="form-label fw-bold fst-italic">phoneNumber :</label>
         <input th:field="*{phoneNumber}" type="text" class="form-control" id="phoneNumber" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{phoneNumber}" th:if="${#fields.hasErrors('phoneNumber')}"> </p>
+        <p style="color: red" th:errors="*{phoneNumber}" th:if="${#fields.hasErrors('phoneNumber')}"></p>
     </div>
     <div class="mb-3">
         <label for="email" class="form-label fw-bold fst-italic">email :</label>
         <input th:field="*{email}" type="text" class="form-control" id="email" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{email}" th:if="${#fields.hasErrors('email')}"> </p>
+        <p style="color: red" th:errors="*{email}" th:if="${#fields.hasErrors('email')}"></p>
     </div>
     <div class="mb-3">
         <label for="address" class="form-label fw-bold fst-italic">address :</label>
         <input th:field="*{address}" type="text" class="form-control" id="address" aria-describedby="nameError">
-        <p style="color: red" th:errors="*{address}" th:if="${#fields.hasErrors('address')}"> </p>
+        <p style="color: red" th:errors="*{address}" th:if="${#fields.hasErrors('address')}"></p>
     </div>
     <div class="mb-3">
         <label for="customerType" class="form-label fw-bold fst-italic">Customer Type:</label>
@@ -61,7 +61,7 @@
                     th:text="${item.name}">
             </option>
         </select>
-        <p style="color: red" th:errors="*{customerTypeId}" th:if="${#fields.hasErrors('customerTypeId')}"> </p>
+        <p style="color: red" th:errors="*{customerTypeId}" th:if="${#fields.hasErrors('customerTypeId')}"></p>
     </div>
     <button type="submit" class="btn btn-primary mb-3 w-100">Add New Customer</button>
 </form>
