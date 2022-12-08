@@ -17,15 +17,16 @@ import java.awt.print.Pageable;
 
 @Controller
 public class BlogController {
-        @Autowired
+    @Autowired
     IBlogService blogService;
-        @Autowired
+    @Autowired
     ICategoryService categoryService;
-@RequestMapping("/blog")
+
+    @RequestMapping("/blog")
     @GetMapping("list")
     String listBlog(@RequestParam(defaultValue = "") String search, @PageableDefault(page = 0, size = 5)
-        Pageable pageable, ModelMap modelMap){
-    Page<Blog> blogPage = blogService.findAll(pageable);
+            Pageable pageable, ModelMap modelMap) {
+        Page<Blog> blogPage = blogService.findAll(pageable);
         modelMap.addAttribute("blogPage", blogPage);
 
         return "blog/list";

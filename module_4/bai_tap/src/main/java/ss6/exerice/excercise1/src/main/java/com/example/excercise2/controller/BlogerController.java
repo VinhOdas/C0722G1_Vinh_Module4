@@ -118,12 +118,14 @@ public class BlogerController {
         modelAndView.addObject("nameSearch", nameSearch);
         return modelAndView;
     }
+
     @GetMapping("category")
     public ModelAndView showCategoryList() {
         ModelAndView modelAndView = new ModelAndView("category/listCategory");
         modelAndView.addObject("categorys", categoryService.getListCategory());
         return modelAndView;
     }
+
     @GetMapping("/create-category")
     public ModelAndView showCreateFormCategory() {
         ModelAndView modelAndView = new ModelAndView("/category/createCategory");
@@ -140,6 +142,7 @@ public class BlogerController {
         modelAndView.addObject("message", "Category created successfully");
         return modelAndView;
     }
+
     @GetMapping("/delete-category/{id}")
     public ModelAndView showDeleteFormCategory(@PathVariable int id) {
         Category category = categoryService.findById(id);
@@ -152,11 +155,13 @@ public class BlogerController {
             return modelAndView;
         }
     }
+
     @PostMapping("/delete-category")
     public String deleteCategory(@ModelAttribute("category") Category category) {
         categoryService.remove(category.getId());
         return "redirect:category";
     }
+
     @GetMapping("/edit-category/{id}")
     public ModelAndView showEditFormCategory(@PathVariable int id) {
         Category category = categoryService.findById(id);
@@ -169,6 +174,7 @@ public class BlogerController {
             return modelAndView;
         }
     }
+
     @PostMapping("/edit-category")
     public ModelAndView editCategory(@ModelAttribute("category") Category category) {
         category.setDeleteStatus(0);

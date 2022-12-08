@@ -19,4 +19,8 @@ public interface ICustomerService {
 
 
     Optional<Customer> findCustomerById(int id);
+
+    Optional<Customer> findById(Integer id);
+
+    void remove(Integer id);
 }

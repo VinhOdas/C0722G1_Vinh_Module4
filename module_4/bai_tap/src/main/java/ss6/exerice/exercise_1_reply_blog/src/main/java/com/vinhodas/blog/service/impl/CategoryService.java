@@ -8,5 +8,5 @@ import org.springframework.stereotype.Service;
 @Service
 public class CategoryService implements ICategoryService {
     @Autowired
-    private  ICategoryRepository categoryRepository;
+    private ICategoryRepository categoryRepository;
 }

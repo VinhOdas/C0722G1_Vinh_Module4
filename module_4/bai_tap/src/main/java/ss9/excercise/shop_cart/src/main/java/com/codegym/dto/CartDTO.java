@@ -20,13 +20,13 @@ public class CartDTO {
     public void setShopDTOMap(Map<ShopDTO, Integer> shopDTOMap) {
         this.shopDTOMap = shopDTOMap;
     }
-    public void adđShop(ShopDTO shopDTO){
 
-        if (shopDTOMap.containsKey(shopDTO)){
+    public void adđShop(ShopDTO shopDTO) {
+
+        if (shopDTOMap.containsKey(shopDTO)) {
             Integer currentValue = shopDTOMap.get(shopDTO);
             shopDTOMap.replace(shopDTO, currentValue + 1);
-        }
-        else {
+        } else {
             shopDTOMap.put(shopDTO, 1);
         }
 

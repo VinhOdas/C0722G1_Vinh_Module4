@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<form   th:object="${product}" method="post">
-<!--    <input type="hidden" th:field="*{id}">-->
+<form th:object="${product}" method="post">
+    <!--    <input type="hidden" th:field="*{id}">-->
     <p><label th:for="name">Name</label></p>
     <p><input type="text" th:field="*{name}"></p>
-    <p><label th:for="price" >price</label></p>
+    <p><label th:for="price">price</label></p>
     <p><input type="number" th:field="*{price}"></p>
     <p><label th:for="productDescription">productDescription</label></p>
     <p><input type="text" th:field="*{productDescription}"></p>

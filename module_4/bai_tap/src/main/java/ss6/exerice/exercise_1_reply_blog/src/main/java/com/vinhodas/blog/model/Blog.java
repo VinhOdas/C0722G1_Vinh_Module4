@@ -5,9 +5,9 @@ import java.util.Date;
 
 @Entity
 public class Blog {
-@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  int id;
+    private int id;
     private String name;
     private String content;
     private String image;

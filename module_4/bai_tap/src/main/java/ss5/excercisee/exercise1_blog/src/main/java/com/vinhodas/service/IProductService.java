@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IProductService {
-    List<Product> findAll( );
+    List<Product> findAll();
 
     Optional<Product> findById(Integer id);
 
@@ -14,7 +14,6 @@ public interface IProductService {
     void remove(Integer id);
 
     void add(Product product);
-
 
 
     void edit(Product product);

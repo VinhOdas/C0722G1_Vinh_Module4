@@ -11,8 +11,9 @@ import java.util.List;
 
 public interface IBlogRepository extends JpaRepository<Blog, Integer> {
 
-    List<Blog> findAll(  );
-        @Modifying
+    List<Blog> findAll();
+
+    @Modifying
     @Transactional
     @Query(value = "SELECT * FROM blog  where name like %:keyword%", nativeQuery = true)
     List<Blog> findByName(@Param("keyword") String searchName);

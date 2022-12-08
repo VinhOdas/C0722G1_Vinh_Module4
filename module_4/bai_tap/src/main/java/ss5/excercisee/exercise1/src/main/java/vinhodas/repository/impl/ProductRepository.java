@@ -17,11 +17,11 @@ public class ProductRepository implements IProductRepository {
     public List<Product> findAll() {
         Session session = null;
         List<Product> productList = null;
-        try{
+        try {
             session = ConnectionUtil.sessionFactory.openSession();
             productList = session.createQuery("FROM Product").getResultList();
-        }finally {
-            if (session != null){
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }
@@ -37,12 +37,12 @@ public class ProductRepository implements IProductRepository {
             session = ConnectionUtil.sessionFactory.openSession();
             product = (Product) session.createQuery("from Product where id =:id").setParameter("id", id).getSingleResult();
 
-        }finally {
-            if (session != null){
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }
-        return product ;
+        return product;
 
     }
 
@@ -52,9 +52,8 @@ public class ProductRepository implements IProductRepository {
 //                return i;
 //            }
 //        }
-            return -1;
+        return -1;
     }
-
 
 
     @Override
@@ -64,13 +63,13 @@ public class ProductRepository implements IProductRepository {
         Transaction transaction = null;
         try {
             session = ConnectionUtil.sessionFactory.openSession();
-          transaction =  session.beginTransaction();
-            product = session.load(Product.class,id);
+            transaction = session.beginTransaction();
+            product = session.load(Product.class, id);
             session.delete(product);
             transaction.commit();
 
-        }finally {
-            if (session != null){
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }
@@ -87,13 +86,12 @@ public class ProductRepository implements IProductRepository {
 
             session.save(product);
 
-        }finally {
-            if (session != null){
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }
     }
-
 
 
     @Override
@@ -106,8 +104,8 @@ public class ProductRepository implements IProductRepository {
 
             session.merge(product);
             transaction.commit();
-        }finally {
-            if (session != null){
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }
@@ -120,9 +118,9 @@ public class ProductRepository implements IProductRepository {
 
         try {
             session = ConnectionUtil.sessionFactory.openSession();
-            productList = session.createQuery("from Product where name like :name").setParameter("name","%"+nameSearch+"%").getResultList();
-        }finally {
-            if (session != null){
+            productList = session.createQuery("from Product where name like :name").setParameter("name", "%" + nameSearch + "%").getResultList();
+        } finally {
+            if (session != null) {
                 session.close();
             }
         }

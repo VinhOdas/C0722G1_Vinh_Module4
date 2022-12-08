@@ -15,13 +15,14 @@ import java.util.Map;
 public class DictionaryController {
     @Autowired
     IDictionaryService dictionaryService;
+
     @RequestMapping("")
     @PostMapping
-    public String showDictionary(Model model, String swap){
-        Map<String ,String> stringMap =dictionaryService.translate();
-        model.addAttribute("swap",swap);
-        model.addAttribute("saveSwap",swap);
-        model.addAttribute("translate",stringMap);
+    public String showDictionary(Model model, String swap) {
+        Map<String, String> stringMap = dictionaryService.translate();
+        model.addAttribute("swap", swap);
+        model.addAttribute("saveSwap", swap);
+        model.addAttribute("translate", stringMap);
 
         return "list";
     }

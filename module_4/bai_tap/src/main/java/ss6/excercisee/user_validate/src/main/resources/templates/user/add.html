@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<form   th:object="${userAdd}" method="post">
+<form th:object="${userAdd}" method="post">
     <!--    <input type="hidden" th:field="*{id}">-->
     <p><label th:for="firstName">firstName</label></p>
     <p><input type="text" th:field="*{firstName}"></p>
-    <p><label th:for="lastName" >lastName</label></p>
+    <p><label th:for="lastName">lastName</label></p>
     <p><input type="text" th:field="*{lastName}"></p>
     <p><label th:for="phoneNumber">phoneNumber</label></p>
     <p><input type="text" th:field="*{phoneNumber}"></p>

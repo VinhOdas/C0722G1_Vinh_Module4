@@ -13,8 +13,8 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/cart")
 public class CartController {
 
-    public ModelAndView showCart( @SessionAttribute("cart")CartDTO cartDTO){
-            return new ModelAndView("cart/list", "cart", cartDTO);
+    public ModelAndView showCart(@SessionAttribute("cart") CartDTO cartDTO) {
+        return new ModelAndView("cart/list", "cart", cartDTO);
     }
 
 }

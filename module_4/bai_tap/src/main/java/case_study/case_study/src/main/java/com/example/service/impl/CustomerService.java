@@ -45,4 +45,14 @@ public class CustomerService implements ICustomerService {
         return customerRepository.findById(id);
     }
 
+    @Override
+    public Optional<Customer> findById(Integer id) {
+        return customerRepository.findById(id);
+    }
+
+    @Override
+    public void remove(Integer id) {
+        customerRepository.remove(id);
+    }
+
 }

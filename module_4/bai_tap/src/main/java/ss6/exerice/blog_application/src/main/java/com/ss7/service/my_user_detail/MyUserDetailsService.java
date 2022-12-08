@@ -1,6 +1,5 @@
 package com.ss7.service.my_user_detail;
 
-import com.ss7.model.MyUserDetail;
 import com.ss7.model.User;
 import com.ss7.repository.IUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

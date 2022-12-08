@@ -19,30 +19,30 @@ import java.util.Optional;
 public class ShopController {
 
     @ModelAttribute("cart")
-    public CartDTO initCart(){
+    public CartDTO initCart() {
         return new CartDTO();
     }
 
 
-
     @GetMapping("")
-   public String showListShop(Model model, @CookieValue(value = "idShop", defaultValue = "-1") Integer idShop){
+    public String showListShop(Model model, @CookieValue(value = "idShop", defaultValue = "-1") Integer idShop) {
         List<Shop> shopList = null;
-        if (idShop != -1){
+        if (idShop != -1) {
             model.addAttribute("historyShop", shopService.findById(idShop));
         }
-       shopList =  shopService.findAll();
-        model.addAttribute("shopList",shopList);
+        shopList = shopService.findAll();
+        model.addAttribute("shopList", shopList);
 
 
-    return "shop/list";
-}
+        return "shop/list";
+    }
+
     @Autowired
     IShopService shopService;
 
 
     @GetMapping("/add/{id}")
-   public String addToCart(@PathVariable Integer id, @SessionAttribute("cart") CartDTO cartDTO){
+    public String addToCart(@PathVariable Integer id, @SessionAttribute("cart") CartDTO cartDTO) {
         Optional<Shop> shop = shopService.findById(id);
         ShopDTO shopDTO = new ShopDTO();
         BeanUtils.copyProperties(shop.get(), shopDTO);

@@ -16,7 +16,7 @@ public class Bloger {
     private int deleteStatus;
 
     @ManyToOne(cascade = CascadeType.REMOVE)
-    @JoinColumn(name = "category_id",referencedColumnName = "id")
+    @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
 
     public Category getCategory() {

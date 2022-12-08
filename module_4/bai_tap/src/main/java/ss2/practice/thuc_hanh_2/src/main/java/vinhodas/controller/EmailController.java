@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 @Controller
 public class EmailController {
     private static final String EMAIL_REGEX = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
@@ -17,15 +18,17 @@ public class EmailController {
     private Matcher matcher;
 
 
-    public EmailController(){
+    public EmailController() {
         pattern = Pattern.compile(EMAIL_REGEX);
     }
+
     @GetMapping("/")
-    public String showIndex(){
+    public String showIndex() {
         return "index";
     }
+
     @PostMapping("/validate")
-    String validateEmail(@RequestParam("email") String email, Model model){
+    String validateEmail(@RequestParam("email") String email, Model model) {
         boolean isValid = this.validate(email);
         if (!isValid) {
             model.addAttribute("message", "Email is invalid");
@@ -40,5 +43,5 @@ public class EmailController {
         matcher = pattern.matcher(regex);
         return matcher.matches();
     }
-    }
+}
 

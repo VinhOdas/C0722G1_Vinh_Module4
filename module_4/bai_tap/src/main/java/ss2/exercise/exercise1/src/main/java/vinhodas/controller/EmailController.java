@@ -12,9 +12,10 @@ public class EmailController {
     public String email() {
         return "email";
     }
+
     @RequestMapping("/save")
     public String save(@RequestParam("condiment") String[] condiment, Model model) {
-        model.addAttribute("condiment",condiment);
+        model.addAttribute("condiment", condiment);
         return "email";
     }
 }

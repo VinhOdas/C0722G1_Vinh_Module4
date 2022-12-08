@@ -7,14 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import vinhodas.service.impl.CalculatorService;
+
 @Controller
 public class CalculatorController {
     @Autowired
     CalculatorService calculatorService;
+
     @GetMapping("/")
     public String formCal() {
         return "calculator";
     }
+
     @PostMapping("/calculator")
     public String calculatorNumber(@RequestParam double a,
                                    @RequestParam double b,

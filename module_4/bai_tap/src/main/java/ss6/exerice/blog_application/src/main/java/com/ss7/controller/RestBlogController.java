@@ -69,7 +69,7 @@ public class RestBlogController {
 
     @GetMapping("/searchByAuthor/{authorName}")
     public ResponseEntity<List<BlogDto>> findByProducer(@PathVariable String authorName) {
-        List<Blog> blogList =  blogService.findByAuthor(authorName);
+        List<Blog> blogList = blogService.findByAuthor(authorName);
 
         if (blogList.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);

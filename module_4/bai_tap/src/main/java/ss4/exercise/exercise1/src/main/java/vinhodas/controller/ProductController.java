@@ -18,28 +18,31 @@ import java.util.List;
 public class ProductController {
     @Autowired
     IProductService productService;
+
     @GetMapping("")
-    String showList(Model model){
+    String showList(Model model) {
         List<Product> productList = productService.findAll();
-        model.addAttribute("productList",productList);
+        model.addAttribute("productList", productList);
         return "product/list";
     }
+
     @GetMapping("/edit")
-    String showFormEdit(@RequestParam ("id") Integer id,Model model){
+    String showFormEdit(@RequestParam("id") Integer id, Model model) {
         Product product = productService.findById(id);
-        model.addAttribute("productEdit",product);
+        model.addAttribute("productEdit", product);
         return "product/edit";
     }
 
     @PostMapping("/edit")
-    String edit(Product product, Integer id, RedirectAttributes redirectAttributes){
-            productService.edit(id,product);
-            return "redirect:/product";
+    String edit(Product product, Integer id, RedirectAttributes redirectAttributes) {
+        productService.edit(id, product);
+        return "redirect:/product";
 
     }
+
     @GetMapping("/delete")
-    String deleteProduct(Integer id, Model model, RedirectAttributes redirectAttributes){
-     Product product =   productService.findById(id);
+    String deleteProduct(Integer id, Model model, RedirectAttributes redirectAttributes) {
+        Product product = productService.findById(id);
         if (product == null) {
             model.addAttribute("message", "Xóa thất bại, không tìm thấy sản phẩm trong danh sách!");
         } else {
@@ -48,17 +51,19 @@ public class ProductController {
         }
         return "redirect:/product";
     }
+
     @GetMapping("/add")
-    String showListAdd(Model model){
-        model.addAttribute("product",new Product());
+    String showListAdd(Model model) {
+        model.addAttribute("product", new Product());
         return "product/add";
     }
+
     @PostMapping("/add")
     String add(Product product,
-               RedirectAttributes redirectAttributes){
-            productService.add(product);
-            redirectAttributes.addFlashAttribute("mess","Thêm mới thành công");
-            return "redirect:/product";
+               RedirectAttributes redirectAttributes) {
+        productService.add(product);
+        redirectAttributes.addFlashAttribute("mess", "Thêm mới thành công");
+        return "redirect:/product";
 
     }
 //    @GetMapping("/product")

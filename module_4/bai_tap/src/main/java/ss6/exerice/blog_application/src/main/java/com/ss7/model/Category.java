@@ -59,7 +59,7 @@ public class Category {
     }
 
     public String getListBlogsAccordingToCategory() {
-        List<Blog> blogDummies =  new ArrayList<>(this.blogs);
+        List<Blog> blogDummies = new ArrayList<>(this.blogs);
         StringBuilder listBlogName = new StringBuilder();
 
         for (int i = 0; i < blogDummies.size(); i++) {

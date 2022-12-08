@@ -14,14 +14,16 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     ICustomerSerice customerSerice;
+
     @RequestMapping("/customers")
-    public String showList(Model model){
+    public String showList(Model model) {
         List<Customer> customerList = customerSerice.findAll();
-        model.addAttribute("customerList",customerList);
+        model.addAttribute("customerList", customerList);
         return "customer/list";
     }
+
     @RequestMapping(value = "edit")
-    public String showFormEdit(Model model){
+    public String showFormEdit(Model model) {
 
         Customer customer = customerSerice.findById();
         List<Customer> customerList = customerSerice.edit();

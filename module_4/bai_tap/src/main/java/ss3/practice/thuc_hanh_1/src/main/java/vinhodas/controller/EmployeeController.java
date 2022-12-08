@@ -12,10 +12,11 @@ import vinhodas.model.Employee;
 public class EmployeeController {
 
     @GetMapping("/showForm")
-    String showForm(ModelMap modelMap){
+    String showForm(ModelMap modelMap) {
         modelMap.addAttribute("employee", new Employee());
         return "create";
     }
+
     @PostMapping("/add")
     public String submit(@ModelAttribute("employee") Employee employee, ModelMap model) {
         model.addAttribute("name", employee.getName());

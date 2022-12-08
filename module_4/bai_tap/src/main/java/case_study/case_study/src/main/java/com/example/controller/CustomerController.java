@@ -15,11 +15,13 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 import java.util.Optional;
 
 @Controller
+@CrossOrigin("*")
 @RequestMapping("/customer")
 public class CustomerController {
     @Autowired
@@ -66,29 +68,47 @@ public class CustomerController {
         return "redirect:/customer";
     }
     @GetMapping("/edit/{id}")
-    String showFormEdit(@PathVariable int id, Model model){
-        Optional<Customer> customer = customerService.findCustomerById(id);
-        CustomerDto customerDto = new CustomerDto();
-        BeanUtils.copyProperties(customer.get(),customerDto);
-        model.addAttribute("customerDto",customerDto);
-        return "customer/edit";
-    }
-    @PostMapping("/edit")
-    public ModelAndView edit(@ModelAttribute @Validated CustomerDto customerDto, BindingResult bindingResult) {
-        new CustomerDto().validate(customerDto, bindingResult);
-        if (bindingResult.hasFieldErrors()) {
-            ModelAndView modelAndView = new ModelAndView("customer/edit");
-            modelAndView.addObject("customerDto", customerDto);
+    public ModelAndView editCustomer(@PathVariable int id){
+        Optional<Customer> optionalCustomer = customerService.findById(id);
+        ModelAndView modelAndView = new ModelAndView("customer/edit");
+        if(!optionalCustomer.isPresent()){
+            modelAndView.addObject("message", "Customer not found");
             return modelAndView;
         }
-        Customer customer = new Customer();
-        BeanUtils.copyProperties(customerDto, customer);
-        customerService.save(customer);
-        ModelAndView modelAndView = new ModelAndView("customer/edit");
+        CustomerDto customerDto = new CustomerDto();
+        BeanUtils.copyProperties(optionalCustomer.get(), customerDto);
+        List<CustomerType> customerTypeList = customerService.findAllCustomerType();
         modelAndView.addObject("customerDto", customerDto);
-        modelAndView.addObject("message", "Customer edited successfully");
         return modelAndView;
     }
+    @PostMapping("/edit")
+    public ModelAndView accepEditCustomer(@ModelAttribute @Validated CustomerDto customerDto, BindingResult bindingResult){
+        if(bindingResult.hasFieldErrors()){
+            ModelAndView modelAndView = new ModelAndView("customer/edit");
+            return modelAndView;
+        } else{
+            Customer customer = new Customer();
+            BeanUtils.copyProperties(customerDto,customer);
+            customerService.save(customer);
+            ModelAndView modelAndView = new ModelAndView("customer/edit");
+            modelAndView.addObject("customerDto", customerDto);
+            modelAndView.addObject("message", "Customer edited successfully");
+            return modelAndView;
+        }
+    }
+    @GetMapping("/delete")
+    String delete(Integer id, Model model, RedirectAttributes redirectAttributes) {
+        Optional<Customer> customer = customerService.findById(id);
+        if (customer == null) {
+            model.addAttribute("message", "Xóa thất bại, không tìm thấy sản phẩm trong danh sách!");
+        } else {
+            this.customerService.remove(id);
+            model.addAttribute("message", "Xóa sản phẩm thành công!");
+        }
+        return "redirect:/customer";
+    }
+
+
 
 
 }

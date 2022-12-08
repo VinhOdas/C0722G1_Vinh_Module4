@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface BlogerRepository extends JpaRepository<Bloger,Integer> {
+public interface BlogerRepository extends JpaRepository<Bloger, Integer> {
 
     Page<Bloger> findAllByNameContainingOrderByDateDesc(String blogName, Pageable pageable);
 }

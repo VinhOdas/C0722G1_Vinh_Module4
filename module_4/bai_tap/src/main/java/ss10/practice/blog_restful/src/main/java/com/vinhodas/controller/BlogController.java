@@ -19,7 +19,8 @@ import java.util.Optional;
 public class BlogController {
     @Autowired
     IBlogService blogService;
-@GetMapping
+
+    @GetMapping
     public ResponseEntity<List<BlogDto>> getBlogList() {
         List<Blog> blogDtos = blogService.findAll();
         if (blogDtos.isEmpty()) {
@@ -34,16 +35,18 @@ public class BlogController {
         }
         return new ResponseEntity<>(blogDtoList, HttpStatus.OK);
     }
+
     @PostMapping("")
-    public  ResponseEntity<Void> create(@RequestBody BlogDto blogDto){
-            Blog blog = new Blog();
-            BeanUtils.copyProperties(blogDto, blog);
-           blogService.save(blog);
-           return new ResponseEntity<>(HttpStatus.OK);
+    public ResponseEntity<Void> create(@RequestBody BlogDto blogDto) {
+        Blog blog = new Blog();
+        BeanUtils.copyProperties(blogDto, blog);
+        blogService.save(blog);
+        return new ResponseEntity<>(HttpStatus.OK);
 
     }
+
     @GetMapping("/search")
-    public ResponseEntity<List<BlogDto>> searchList(@RequestParam String searchName){
+    public ResponseEntity<List<BlogDto>> searchList(@RequestParam String searchName) {
         List<Blog> blogDtos = blogService.findbyName(searchName);
         if (blogDtos.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
@@ -57,10 +60,6 @@ public class BlogController {
         }
         return new ResponseEntity<>(blogDtoList, HttpStatus.OK);
     }
-
-
-
-
 
 
 }

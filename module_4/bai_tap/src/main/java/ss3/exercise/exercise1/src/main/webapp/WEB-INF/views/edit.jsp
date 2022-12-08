@@ -13,15 +13,15 @@
     <title>Title</title>
 </head>
 <body>
-<form:form action="" method="post" modelAttribute="language" >
+<form:form action="" method="post" modelAttribute="language">
     <center>
-    <form:hidden path="id"/>
-   <p><form:select path="language" items="${stringLanguage}"></form:select></p>
-    <p><form:select path="pageSize" items="${pageSize}"></form:select></p>
+        <form:hidden path="id"/>
+        <p><form:select path="language" items="${stringLanguage}"></form:select></p>
+        <p><form:select path="pageSize" items="${pageSize}"></form:select></p>
         <p><form:checkbox path="spamFilter"/>
 
-    <p><form:textarea path="signature"/></p>
-    <p><input type="submit" value="Save"></p>
+        <p><form:textarea path="signature"/></p>
+        <p><input type="submit" value="Save"></p>
     </center>
 </form:form>
 </body>

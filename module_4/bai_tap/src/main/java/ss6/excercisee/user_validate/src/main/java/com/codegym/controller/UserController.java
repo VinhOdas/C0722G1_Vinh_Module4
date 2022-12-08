@@ -16,22 +16,24 @@ import java.util.List;
 public class UserController {
     @Autowired
     IUserService userService;
-    @GetMapping("/list")
-    String showListUser(ModelMap model){
-        List<User>  userList = userService.findAll();
-        model.addAttribute("userList",userList);
-        return "user/list";
-     }
-     @GetMapping("/add")
-    String showFormAdd(Model model){
-        model.addAttribute("userAdd",new User());
-        return "user/add";
-     }
 
-     @PostMapping("/add")
-    String add(User user, RedirectAttributes redirectAttributes){
+    @GetMapping("/list")
+    String showListUser(ModelMap model) {
+        List<User> userList = userService.findAll();
+        model.addAttribute("userList", userList);
+        return "user/list";
+    }
+
+    @GetMapping("/add")
+    String showFormAdd(Model model) {
+        model.addAttribute("userAdd", new User());
+        return "user/add";
+    }
+
+    @PostMapping("/add")
+    String add(User user, RedirectAttributes redirectAttributes) {
         userService.save(user);
-         redirectAttributes.addFlashAttribute("mess", "Thêm mới thành công");
+        redirectAttributes.addFlashAttribute("mess", "Thêm mới thành công");
         return "redirect:/list";
     }
 

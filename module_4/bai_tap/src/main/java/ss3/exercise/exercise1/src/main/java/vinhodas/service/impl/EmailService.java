@@ -25,7 +25,7 @@ public class EmailService implements IEmailService {
 
     @Override
     public void edit(Integer id, Language language) {
-        languageRepository.edit(id,language);
+        languageRepository.edit(id, language);
     }
 
 

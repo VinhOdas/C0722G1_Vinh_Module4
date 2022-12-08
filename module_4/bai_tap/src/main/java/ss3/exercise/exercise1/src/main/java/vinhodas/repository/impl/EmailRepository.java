@@ -9,12 +9,14 @@ import java.util.List;
 
 @Repository
 public class EmailRepository implements IEmailRepository {
-   private static List<Language> languageList = new ArrayList<>();
+    private static List<Language> languageList = new ArrayList<>();
+
     static {
-        languageList.add(new Language(1,"English","25",true,"f"));
-        languageList.add(new Language(2,"English","25",false,"Thor"));
+        languageList.add(new Language(1, "English", "25", true, "f"));
+        languageList.add(new Language(2, "English", "25", false, "Thor"));
 
     }
+
     @Override
     public List<Language> findAll() {
         return languageList;
@@ -22,8 +24,8 @@ public class EmailRepository implements IEmailRepository {
 
     @Override
     public Language findById(Integer idLanguage) {
-        for (Language language: languageList){
-            if (language.getId() == idLanguage){
+        for (Language language : languageList) {
+            if (language.getId() == idLanguage) {
                 return language;
             }
         }
@@ -34,11 +36,12 @@ public class EmailRepository implements IEmailRepository {
     public void edit(Integer id, Language language) {
         int index = findIndex(id);
         languageList.remove(index);
-        languageList.add(index,language);
+        languageList.add(index, language);
     }
-    public int findIndex(int id){
-        for (int i = 0; i < languageList.size();i++){
-            if (languageList.get(i).getId() == id){
+
+    public int findIndex(int id) {
+        for (int i = 0; i < languageList.size(); i++) {
+            if (languageList.get(i).getId() == id) {
                 return i;
             }
         }

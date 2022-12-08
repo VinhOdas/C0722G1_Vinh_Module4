@@ -41,9 +41,15 @@
         <td th:text="${x.getAuthor()}"></td>
         <td th:text="${x.getDateFormatted()}"></td>
         <td th:text="${x.category.getName()}"></td>
-        <td><button><a th:href="@{/blog/view-blog/__${x.getId()}__}">View</a></button></td>
-        <td><button><a th:href="@{/blog/edit-blog/__${x.getId()}__}">Edit</a></button></td>
-        <td><button><a th:href="@{/blog/delete-blog/__${x.getId()}__}">Delete</a></button></td>
+        <td>
+            <button><a th:href="@{/blog/view-blog/__${x.getId()}__}">View</a></button>
+        </td>
+        <td>
+            <button><a th:href="@{/blog/edit-blog/__${x.getId()}__}">Edit</a></button>
+        </td>
+        <td>
+            <button><a th:href="@{/blog/delete-blog/__${x.getId()}__}">Delete</a></button>
+        </td>
     </tr>
 </table>
 <div>

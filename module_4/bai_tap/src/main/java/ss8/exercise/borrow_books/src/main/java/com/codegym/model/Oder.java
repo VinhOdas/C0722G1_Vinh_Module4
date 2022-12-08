@@ -15,7 +15,7 @@ public class Oder {
     private Date borrowedDate;
     // "list" bắt từ List<Oder> ở class Book
     @ManyToMany(mappedBy = "list", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    List<Book> books ;
+    List<Book> books;
 
     public Oder() {
     }

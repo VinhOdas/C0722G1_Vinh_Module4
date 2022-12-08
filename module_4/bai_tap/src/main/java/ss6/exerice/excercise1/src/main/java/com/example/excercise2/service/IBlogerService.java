@@ -17,6 +17,6 @@ public interface IBlogerService {
 
     void remove(Bloger bloger);
 
-    Page<Bloger> findByName(String nameSearch,Pageable pageable);
+    Page<Bloger> findByName(String nameSearch, Pageable pageable);
 
 }

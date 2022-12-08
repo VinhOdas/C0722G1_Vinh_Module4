@@ -40,8 +40,8 @@ public class BlogerServiceIplm implements IBlogerService {
     }
 
     @Override
-    public Page<Bloger> findByName(String nameSearch,Pageable pageable) {
-        return blogerRepository.findAllByNameContainingOrderByDateDesc(nameSearch,pageable);
+    public Page<Bloger> findByName(String nameSearch, Pageable pageable) {
+        return blogerRepository.findAllByNameContainingOrderByDateDesc(nameSearch, pageable);
     }
 
 

@@ -17,7 +17,7 @@ public class Blog {
 
     @ManyToOne
     @JsonBackReference
-private Category category;
+    private Category category;
 
     public Blog() {
     }

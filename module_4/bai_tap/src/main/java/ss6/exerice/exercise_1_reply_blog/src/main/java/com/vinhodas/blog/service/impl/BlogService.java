@@ -12,7 +12,7 @@ import java.awt.print.Pageable;
 @Service
 public class BlogService implements IBlogService {
     @Autowired
-   private   IBlogRepository blogRepository;
+    private IBlogRepository blogRepository;
 
     @Override
     public Page<Blog> findAll(Pageable pageable) {

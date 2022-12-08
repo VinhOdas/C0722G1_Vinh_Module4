@@ -33,12 +33,12 @@ public class ProductRepository implements IProductRepository {
     }
 
     public int findIndex(int id) {
-        for (int i =0; i < products.size(); i++){
-            if (products.get(i).getId() == id ){
+        for (int i = 0; i < products.size(); i++) {
+            if (products.get(i).getId() == id) {
                 return i;
             }
         }
-            return -1;
+        return -1;
     }
 
     @Override
@@ -62,10 +62,10 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public List<Product> search(String name) {
-    List<Product> productSearch =new ArrayList<>();
-        for (Product product: products
-             ) {
-            if (product.getName().contains(name)){
+        List<Product> productSearch = new ArrayList<>();
+        for (Product product : products
+        ) {
+            if (product.getName().contains(name)) {
                 productSearch.add(product);
             }
 

@@ -63,7 +63,7 @@ public class CategoryController {
 
 
     @GetMapping("/edit-category/{idEdit}")
-    public String showEditForm(Model model,@PathVariable Integer idEdit) {
+    public String showEditForm(Model model, @PathVariable Integer idEdit) {
         Optional<Category> categoryEdit = categoryService.findById(idEdit);
 
         if (categoryEdit.isPresent()) {
@@ -78,7 +78,7 @@ public class CategoryController {
     public String editBlog(@ModelAttribute Category categoryEdit, RedirectAttributes redirectAttributes) {
         categoryService.save(categoryEdit);
 
-        redirectAttributes.addFlashAttribute("mess","Category Edited successfully!");
+        redirectAttributes.addFlashAttribute("mess", "Category Edited successfully!");
 
         return "redirect:/category/list";
     }

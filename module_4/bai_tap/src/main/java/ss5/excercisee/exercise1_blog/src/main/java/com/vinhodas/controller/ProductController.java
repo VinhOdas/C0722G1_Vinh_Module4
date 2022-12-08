@@ -44,7 +44,7 @@ public class ProductController {
     @GetMapping("/delete")
     String deleteProduct(@RequestParam Integer idDelete, Model model, RedirectAttributes redirectAttributes) {
         productService.remove(idDelete);
-        redirectAttributes.addFlashAttribute("mess","Xoa thanh cong!");
+        redirectAttributes.addFlashAttribute("mess", "Xoa thanh cong!");
         return "redirect:/product";
     }
 

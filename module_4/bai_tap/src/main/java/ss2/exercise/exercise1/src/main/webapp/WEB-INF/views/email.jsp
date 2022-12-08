@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -17,8 +16,8 @@
     <input type="checkbox" value="Sprouts" name="condiment"> Sprouts
     <button type="submit" value="Save">Save</button>
     Result: <c:forEach items="${condiment}" var="condiment">
-      <p>${condiment}</p>
-    </c:forEach>
+    <p>${condiment}</p>
+</c:forEach>
 
 </form>
 </body>

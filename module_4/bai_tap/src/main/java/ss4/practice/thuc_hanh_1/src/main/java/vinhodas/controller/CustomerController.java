@@ -13,15 +13,17 @@ import java.util.List;
 public class CustomerController {
     @Autowired
     ICustomerService customerService;
+
     @GetMapping("")
-    String showList(Model model){
+    String showList(Model model) {
         List<Customer> customerList = customerService.findAll();
-        model.addAttribute("customerList",customerList);
+        model.addAttribute("customerList", customerList);
         return "customer/list";
 
     }
+
     @GetMapping("/edit")
-    String showFormEdit(){
+    String showFormEdit() {
 
     }
 }

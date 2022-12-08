@@ -40,16 +40,16 @@ public class BorrowerBookController {
             bookATBC.setAmount(book.get().getAmount() - 1);
             if (!(book.get().getAmount() == -1)) {
 
-            Oder oder = new Oder();
-            int code = (int) (Math.random() * (99999 - 10000) + 10000);
+                Oder oder = new Oder();
+                int code = (int) (Math.random() * (99999 - 10000) + 10000);
 
-            oder.setId(code);
-            long millis = System.currentTimeMillis();
+                oder.setId(code);
+                long millis = System.currentTimeMillis();
 
-            oder.setBorrowedDate(new java.sql.Date(millis));
-            String name = book.get().getNameBook();
+                oder.setBorrowedDate(new java.sql.Date(millis));
+                String name = book.get().getNameBook();
 
-            oder.setName(name);
+                oder.setName(name);
 //            oderService.save(oder);
                 List<Oder> oderList = bookATBC.getList();
                 oderList.add(oder);

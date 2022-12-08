@@ -17,30 +17,32 @@ import java.util.List;
 public class EmalController {
     @Autowired
     IEmailService languageService;
+
     @GetMapping("/home")
-    String showList(Model model){
+    String showList(Model model) {
         List<Language> languageList = languageService.findAll();
-        model.addAttribute("languageList",languageList);
+        model.addAttribute("languageList", languageList);
 
 
         return "email";
     }
 
     @GetMapping("/edit")
-    String showFormEditLanguage(@RequestParam("id") Integer idLanguage, Model model){
+    String showFormEditLanguage(@RequestParam("id") Integer idLanguage, Model model) {
         Language language = languageService.findById(idLanguage);
-        List<String> stringLanguage = Arrays.asList("Language", "Vietnamese", "Japanese","Chinese");
-        List<String> pageSize = Arrays.asList("10","15","20","25");
-         model.addAttribute("language",language);
-        model.addAttribute("stringLanguage",stringLanguage);
-        model.addAttribute("pageSize",pageSize);
+        List<String> stringLanguage = Arrays.asList("Language", "Vietnamese", "Japanese", "Chinese");
+        List<String> pageSize = Arrays.asList("10", "15", "20", "25");
+        model.addAttribute("language", language);
+        model.addAttribute("stringLanguage", stringLanguage);
+        model.addAttribute("pageSize", pageSize);
 
         return "edit";
     }
+
     @PostMapping("/edit")
-    String edit(Language language, Integer id, RedirectAttributes redirectAttributes){
+    String edit(Language language, Integer id, RedirectAttributes redirectAttributes) {
         languageService.edit(id, language);
 
-           return "redirect:/home";
+        return "redirect:/home";
     }
 }
