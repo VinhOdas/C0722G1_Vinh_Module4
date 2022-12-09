@@ -1,7 +1,7 @@
 package com.example.service.impl;
 
-import com.example.model.Customer;
-import com.example.model.CustomerType;
+import com.example.model.customer.Customer;
+import com.example.model.customer.CustomerType;
 import com.example.repository.ICustomerRepository;
 import com.example.repository.ICustomerTypeRepository;
 import com.example.service.ICustomerService;

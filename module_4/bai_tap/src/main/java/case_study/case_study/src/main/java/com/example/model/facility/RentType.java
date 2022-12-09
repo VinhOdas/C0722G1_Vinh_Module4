@@ -1,29 +1,29 @@
-package com.example.model.customer;
-
-import com.example.model.customer.Customer;
+package com.example.model.facility;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class CustomerType {
+public class RentType {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     @Column(columnDefinition = "int default 1")
     private int status = 1;
-    @OneToMany(mappedBy = "customerTypeId")
-    private Set<Customer> customers;
 
-    public CustomerType() {
+    @OneToMany(mappedBy = "rentType")
+    private Set<Facility> facilities;
+
+    public RentType() {
     }
 
-    public CustomerType(int id, String name, int status, Set<Customer> customers) {
+
+    public RentType(int id, String name, int status, Set<Facility> facilities) {
         this.id = id;
         this.name = name;
         this.status = status;
-        this.customers = customers;
+        this.facilities = facilities;
     }
 
     public int getId() {
@@ -50,13 +50,11 @@ public class CustomerType {
         this.status = status;
     }
 
-    public Set<Customer> getCustomers() {
-        return customers;
+    public Set<Facility> getFacilities() {
+        return facilities;
     }
 
-    public void setCustomers(Set<Customer> customers) {
-        this.customers = customers;
+    public void setFacilities(Set<Facility> facilities) {
+        this.facilities = facilities;
     }
-
 }
-

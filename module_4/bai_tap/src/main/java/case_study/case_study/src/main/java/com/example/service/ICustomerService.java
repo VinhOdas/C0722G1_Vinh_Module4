@@ -1,7 +1,8 @@
 package com.example.service;
 
-import com.example.model.Customer;
-import com.example.model.CustomerType;
+import com.example.model.customer.Customer;
+
+import com.example.model.customer.CustomerType;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

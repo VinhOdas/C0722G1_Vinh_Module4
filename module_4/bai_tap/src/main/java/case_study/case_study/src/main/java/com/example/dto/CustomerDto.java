@@ -1,6 +1,6 @@
 package com.example.dto;
 
-import com.example.model.CustomerType;
+import com.example.model.customer.CustomerType;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.validation.annotation.Validated;
