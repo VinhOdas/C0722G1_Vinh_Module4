@@ -15,12 +15,12 @@ import javax.transaction.Transactional;
 public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
     @Query(value = " select c.* from `customer` c  join  `customer_type` ct " +
             " on c.customer_type_id = ct.id " +
-            "where c.name like %:name% and c.delete_status =1", nativeQuery = true)
+            "where c.name like %:name% and c.status =1", nativeQuery = true)
     Page<Customer> findByName(@Param("name") String searchName,
                               Pageable pageable);
     @Transactional
     @Modifying
-    @Query(value = "update customer set delete_status = 0 where id = :id", nativeQuery = true)
+    @Query(value = "update customer set status = 0 where id = :id", nativeQuery = true)
     void remove(@Param("id") Integer id);
  ;
 

@@ -12,7 +12,7 @@ public class CustomerDto implements Validator {
     @NotBlank(message = "not empty")
     private String name;
     @NotBlank(message = "not empty")
-    private String birthDay;
+    private String dateOfBirth;
 
     private int gender;
 
@@ -30,10 +30,10 @@ public class CustomerDto implements Validator {
     public CustomerDto() {
     }
 
-    public CustomerDto(int id, @NotBlank(message = "not empty") String name, @NotBlank(message = "not empty") String birthDay, @NotBlank(message = "not empty") int gender, @NotBlank(message = "not empty") String idCard, @NotBlank(message = "not empty") String phoneNumber, @NotBlank(message = "not empty") String email, @NotBlank(message = "not empty") String address, int deleteStatus, CustomerType customerTypeId) {
+    public CustomerDto(int id, @NotBlank(message = "not empty") String name, @NotBlank(message = "not empty") String dateOfBirth, int gender, @NotBlank(message = "not empty") String idCard, @NotBlank(message = "not empty") String phoneNumber, @NotBlank(message = "not empty") String email, @NotBlank(message = "not empty") String address, int deleteStatus, CustomerType customerTypeId) {
         this.id = id;
         this.name = name;
-        this.birthDay = birthDay;
+        this.dateOfBirth = dateOfBirth;
         this.gender = gender;
         this.idCard = idCard;
         this.phoneNumber = phoneNumber;
@@ -59,12 +59,12 @@ public class CustomerDto implements Validator {
         this.name = name;
     }
 
-    public String getBirthDay() {
-        return birthDay;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setBirthDay(String birthDay) {
-        this.birthDay = birthDay;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public int getGender() {

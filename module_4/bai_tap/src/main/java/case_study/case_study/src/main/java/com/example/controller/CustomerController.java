@@ -35,7 +35,7 @@ public class CustomerController {
     @GetMapping
     String showList(
             @RequestParam(value = "searchName", defaultValue = "") String searchName,
-            @PageableDefault(page = 0, value = 2) Pageable pageable,
+            @PageableDefault(page = 0, value = 6) Pageable pageable,
             Model model) {
         Page<Customer> customerList = customerService.search(searchName, pageable);
         model.addAttribute("customerList", customerList);
