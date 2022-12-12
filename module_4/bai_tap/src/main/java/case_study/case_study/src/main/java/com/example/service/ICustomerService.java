@@ -24,4 +24,6 @@ public interface ICustomerService {
     Optional<Customer> findById(Integer id);
 
     void remove(Integer id);
+
+    Page<Customer> findByNameAndEmailAndCustomerType(String nameSearch, String email, String customerType, Pageable pageable);
 }

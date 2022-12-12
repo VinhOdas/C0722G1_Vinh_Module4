@@ -68,9 +68,14 @@
 </div>
 <div>
 
-    <form action="/customer" style="background: #046056">
-        <input type="text" name="searchName "  placeholder="Search name" style="height: 50px" width="50px">
-        <input type="submit" value="Search" style="height: 50px">
+    <form action="/customer" >
+        <input type="text" name="nameSearch" placeholder="...name customer">
+        <input type="text" name="email" placeholder="...search email ">
+        <select name="customerType">
+            <option value="" selected>Type</option>
+            <option th:each="item: ${customerTypeList}" th:value="${item.name}" th:text="${item.name}"></option>
+        </select>
+        <input type="submit" value="Search">
     </form>
     <center style="background: #046056">
         <button type="button" class="btn btn-info" style="width: 60px"   ><a href="/customer/add" >Add Customer</a></button>

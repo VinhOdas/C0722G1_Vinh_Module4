@@ -22,6 +22,13 @@ public interface ICustomerRepository extends JpaRepository<Customer, Integer> {
     @Modifying
     @Query(value = "update customer set status = 0 where id = :id", nativeQuery = true)
     void remove(@Param("id") Integer id);
- ;
+
+    @Query(value = "select c.* from `customer` c  join `customer_type` ct " +
+            "on c.customer_type_id = ct.id " +
+            "where c.name like %:name% and c.email like %:email% and ct.name like %:type% and c.status= 1", nativeQuery = true)
+    Page<Customer> findByNameAndEmailAndCustomerType(@Param("name") String name,
+                                                     @Param("email") String email,
+                                                     @Param("type") String type,
+                                                     Pageable pageable);
 
 }

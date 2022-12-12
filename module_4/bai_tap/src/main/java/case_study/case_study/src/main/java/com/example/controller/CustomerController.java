@@ -31,17 +31,29 @@ public class CustomerController {
     public List<CustomerType> getListCustomerTypes() {
         return customerService.findAllCustomerType();
     }
-
-    @GetMapping
-    String showList(
-            @RequestParam(value = "searchName", defaultValue = "") String searchName,
-            @PageableDefault(page = 0, value = 6) Pageable pageable,
-            Model model) {
-        Page<Customer> customerList = customerService.search(searchName, pageable);
-        model.addAttribute("customerList", customerList);
-        model.addAttribute("searchName", searchName);
-        return "customer/list";
+    @GetMapping("")
+    public ModelAndView showCustomers(@RequestParam(value = "nameSearch", defaultValue = "") String nameSearch,
+                                      @RequestParam(value = "email", defaultValue = "") String email,
+                                      @RequestParam(value = "customerType", defaultValue = "") String customerType,
+                                      @PageableDefault(value = 1) Pageable pageable) {
+        Page<Customer> customers = customerService.findByNameAndEmailAndCustomerType(nameSearch, email, customerType, pageable);
+        ModelAndView modelAndView = new ModelAndView("customer/list");
+        modelAndView.addObject("customers", customers);
+        modelAndView.addObject("nameSearch", nameSearch);
+        modelAndView.addObject("email", email);
+        modelAndView.addObject("customerType",customerType);
+        return modelAndView;
     }
+//    @GetMapping
+//    String showList(
+//            @RequestParam(value = "searchName", defaultValue = "") String searchName,
+//            @PageableDefault(page = 0, value = 6) Pageable pageable,
+//            Model model) {
+//        Page<Customer> customerList = customerService.search(searchName, pageable);
+//        model.addAttribute("customerList", customerList);
+//        model.addAttribute("searchName", searchName);
+//        return "customer/list";
+//    }
 
     @GetMapping("/add")
     String showAdd(Model model) {

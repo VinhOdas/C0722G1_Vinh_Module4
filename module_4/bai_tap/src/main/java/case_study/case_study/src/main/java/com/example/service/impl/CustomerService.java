@@ -55,4 +55,9 @@ public class CustomerService implements ICustomerService {
         customerRepository.remove(id);
     }
 
+    @Override
+    public Page<Customer> findByNameAndEmailAndCustomerType(String nameSearch, String email, String customerType, Pageable pageable) {
+        return customerRepository.findByNameAndEmailAndCustomerType(nameSearch,email,customerType,pageable);
+    }
+
 }
