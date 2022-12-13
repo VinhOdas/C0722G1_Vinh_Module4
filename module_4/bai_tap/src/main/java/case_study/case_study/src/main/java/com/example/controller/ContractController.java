@@ -30,8 +30,6 @@ public class ContractController {
     @Autowired
     private IEmployeeService employeeService;
 
-
-
   @GetMapping
     public ModelAndView showContracts(@PageableDefault(value = 4)Pageable pageable){
       Page<IContractDto> contractDtos = contractSerivice.getListContract(pageable);
