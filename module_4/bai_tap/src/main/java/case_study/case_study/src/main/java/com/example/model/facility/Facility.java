@@ -9,7 +9,7 @@ import java.util.Set;
 public class Facility {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String name;
     private String area;
     private String cost;
@@ -36,7 +36,7 @@ public class Facility {
     public Facility() {
     }
 
-    public Facility(int id, String name, String area, String cost, String maxPeople, String standardRoom, String descriptionOtherConvenience, String poolArea, String numberOfFloors, String facilityFree, int status, RentType rentType, FacilityType facilityType, Set<Contract> contracts) {
+    public Facility(Integer id, String name, String area, String cost, String maxPeople, String standardRoom, String descriptionOtherConvenience, String poolArea, String numberOfFloors, String facilityFree, int status, RentType rentType, FacilityType facilityType, Set<Contract> contracts) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -53,11 +53,11 @@ public class Facility {
         this.contracts = contracts;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

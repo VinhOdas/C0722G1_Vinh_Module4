@@ -58,4 +58,6 @@ public class FacilityService implements IFacilityService {
     public List<RentType> findAllRentType() {
         return rentTypeRepository.findAll();
     }
+
+
 }
