@@ -35,10 +35,10 @@ public class CustomerController {
     public ModelAndView showCustomers(@RequestParam(value = "nameSearch", defaultValue = "") String nameSearch,
                                       @RequestParam(value = "email", defaultValue = "") String email,
                                       @RequestParam(value = "customerType", defaultValue = "") String customerType,
-                                      @PageableDefault(value = 1) Pageable pageable) {
+                                      @PageableDefault(value = 4) Pageable pageable) {
         Page<Customer> customers = customerService.findByNameAndEmailAndCustomerType(nameSearch, email, customerType, pageable);
         ModelAndView modelAndView = new ModelAndView("customer/list");
-        modelAndView.addObject("customers", customers);
+        modelAndView.addObject("customerList", customers);
         modelAndView.addObject("nameSearch", nameSearch);
         modelAndView.addObject("email", email);
         modelAndView.addObject("customerType",customerType);
@@ -109,14 +109,9 @@ public class CustomerController {
         }
     }
     @GetMapping("/delete")
-    String delete(Integer id, Model model, RedirectAttributes redirectAttributes) {
-        Optional<Customer> customer = customerService.findById(id);
-        if (customer == null) {
-            model.addAttribute("message", "Xóa thất bại, không tìm thấy sản phẩm trong danh sách!");
-        } else {
-            this.customerService.remove(id);
-            model.addAttribute("message", "Xóa sản phẩm thành công!");
-        }
+    public String deleteCustomer(@RequestParam(value = "idDelete") int id, RedirectAttributes redirectAttributes){
+        customerService.remove(id);
+        redirectAttributes.addFlashAttribute("message","Delete customer successfully!");
         return "redirect:/customer";
     }
 
