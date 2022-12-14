@@ -2,6 +2,7 @@ package com.example.service.impl;
 
 import com.example.dto.IContractDto;
 import com.example.model.contract.AttachFacility;
+import com.example.model.contract.Contract;
 import com.example.repository.contract.AttachFacilityRepository;
 import com.example.repository.contract.ContractDetailRepository;
 import com.example.repository.contract.ContractRepository;
@@ -32,4 +33,11 @@ public class ContractService implements IContractSerivice {
     public List<AttachFacility> findAllAttachFacility() {
         return attachFacilityRepository.findAll();
     }
+
+    @Override
+    public void save(Contract contract) {
+        contractRepository.save(contract);
+    }
+
+
 }
