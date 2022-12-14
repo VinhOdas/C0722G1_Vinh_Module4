@@ -1,46 +1,59 @@
 package com.example.dto;
 
+import com.example.model.contract.Contract;
 import com.example.model.customer.CustomerType;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
+import java.util.Set;
 
-public class CustomerDto implements Validator {
+public class CustomerDto implements Validator  {
     private int id;
-    @NotBlank(message = "not empty")
+    @NotBlank(message = "Name không được để trống")
+    @Pattern(regexp = "^(([\\p{Lu}][\\p{Ll}]{1,8})(\\s([\\p{Lu}]|[\\p{Lu}][\\p{Ll}]{1,10})){0,5})| *$",
+            message = "Tên khách hàng không được chứa số, và các kí tự đầu tiên của mỗi từ phải viết hoa.")
     private String name;
-    @NotBlank(message = "not empty")
+    @NotBlank(message="Không được để trống")
     private String dateOfBirth;
-
     private int gender;
-
-    @NotBlank(message = "not empty")
+    @NotBlank(message = "Số CMND/CCCD không được để trống.")
+    @Pattern(regexp = "^(\\d{9}|\\d{12})| *$",
+            message = "Số CMND/CCCD phải đúng định dạng XXXXXXXXX hoặc XXXXXXXXXXXX (X là số 0-9).")
     private String idCard;
-    @NotBlank(message = "not empty")
+    @NotBlank(message = "Số điện thoại không được để trống.")
+    @Pattern(regexp = "^((0|[(]84[)][+])9[01]\\d{7})| *$", message =
+            "Số điện thoại phải đúng định dạng 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx.")
     private String phoneNumber;
-    @NotBlank(message = "not empty")
+    @NotBlank(message = "Email không được để trống.")
+    @Email(message = "Địa chỉ email phải đúng định dạng.")
     private String email;
-    @NotBlank(message = "not empty")
+    @NotBlank(message = "Địa chỉ không được để trống.")
+//    @Pattern(regexp = "\\d{2}[-|/]\\d{2}[-|/]\\d{4}", message = "nhập sai định dạng")
     private String address;
-    private int deleteStatus = 1;
-    private CustomerType customerTypeId;
-
+    private Integer status = 1;
+    private CustomerType customerType;
+    private Set<Contract> contracts;
     public CustomerDto() {
     }
 
-    public CustomerDto(int id, @NotBlank(message = "not empty") String name, @NotBlank(message = "not empty") String dateOfBirth, int gender, @NotBlank(message = "not empty") String idCard, @NotBlank(message = "not empty") String phoneNumber, @NotBlank(message = "not empty") String email, @NotBlank(message = "not empty") String address, int deleteStatus, CustomerType customerTypeId) {
-        this.id = id;
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
-        this.idCard = idCard;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.address = address;
-        this.deleteStatus = deleteStatus;
-        this.customerTypeId = customerTypeId;
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Set<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(Set<Contract> contracts) {
+        this.contracts = contracts;
     }
 
     public int getId() {
@@ -107,20 +120,12 @@ public class CustomerDto implements Validator {
         this.address = address;
     }
 
-    public int getDeleteStatus() {
-        return deleteStatus;
+    public CustomerType getCustomerType() {
+        return customerType;
     }
 
-    public void setDeleteStatus(int deleteStatus) {
-        this.deleteStatus = deleteStatus;
-    }
-
-    public CustomerType getCustomerTypeId() {
-        return customerTypeId;
-    }
-
-    public void setCustomerTypeId(CustomerType customerTypeId) {
-        this.customerTypeId = customerTypeId;
+    public void setCustomerType(CustomerType customerType) {
+        this.customerType = customerType;
     }
 
     @Override
@@ -130,8 +135,6 @@ public class CustomerDto implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        // cấu hình validate
         CustomerDto customerDto = (CustomerDto) target;
-
     }
 }

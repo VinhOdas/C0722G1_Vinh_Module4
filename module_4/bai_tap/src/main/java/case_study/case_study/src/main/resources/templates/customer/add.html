@@ -11,7 +11,7 @@
 </head>
 <body>
 <center>
-    <form method="post"  th:object="${customerList}" style="width: 30%; height: 50%" >
+    <form method="post"  th:object="${customerDto}" style="width: 30%; height: 50%" >
         <div class="mb-5 mt-3 text-center fst-italic">
             <h1>Add New Customer Form</h1>
         </div>
@@ -22,7 +22,7 @@
         </div>
         <div class="mb-3">
             <label for="dateOfBirth" style="background: orange" class="form-label fw-bold fst-italic"> dateOfBirth:</label>
-            <input th:field="*{dateOfBirth}" type="text" class="form-control" id="dateOfBirth" aria-describedby="nameError">
+            <input th:field="*{dateOfBirth}" type="date" class="form-control" id="dateOfBirth" aria-describedby="nameError">
             <p style="color: red" th:errors="*{dateOfBirth}" th:if="${#fields.hasErrors('dateOfBirth')}"></p>
         </div>
         <div class="mb-3">
@@ -56,13 +56,13 @@
         </div>
         <div class="mb-3">
             <label for="customerType" class="form-label fw-bold fst-italic" style="background: darkgray">Customer Type:</label>
-            <select th:field="*{customerTypeId}" id="customerType" class="form-select" aria-label="Default select example">
+            <select th:field="*{customerType}" id="customerType" class="form-select" aria-label="Default select example">
                 <option th:each="item : ${customerTypes}"
                         th:value="${item.id}"
                         th:text="${item.name}">
                 </option>
             </select>
-            <p style="color: red" th:errors="*{customerTypeId}" th:if="${#fields.hasErrors('customerTypeId')}"></p>
+            <p style="color: red" th:errors="*{customerType}" th:if="${#fields.hasErrors('customerType')}"></p>
         </div>
         <button type="submit" class="btn btn-info mb-3 w30">Add New Customer</button>
     </form>

@@ -57,27 +57,26 @@ public class CustomerController {
 
     @GetMapping("/add")
     String showAdd(Model model) {
-        model.addAttribute("customerList", new CustomerDto());
+        model.addAttribute("customerDto", new CustomerDto());
         return "customer/add";
     }
 
     @PostMapping("/add")
-    String addDto(@Validated @ModelAttribute("customerList") CustomerDto customerDto,
-                  BindingResult bindingResult,
-                  Model model) {
-        new CustomerDto().validate(customerDto, bindingResult);
-        if (bindingResult.hasErrors()) {
-            System.out.println(bindingResult.getErrorCount());
-            model.addAttribute("customerList", customerDto);
-            model.addAttribute("message", "Add new not success!");
-            return "customer/add";
+    public ModelAndView acceptCreateCustomer(@Validated @ModelAttribute CustomerDto customerDto,
+                                             BindingResult bindingResult) {
+        new CustomerDto().validate(customerDto,bindingResult);
+        if (bindingResult.hasFieldErrors()) {
+            ModelAndView modelAndView = new ModelAndView("customer/add");
+            return modelAndView;
+        } else {
+            Customer customer = new Customer();
+            BeanUtils.copyProperties(customerDto, customer);
+            customerService.save(customer);
+            ModelAndView modelAndView = new ModelAndView("redirect:/customer");
+            modelAndView.addObject("customerDto", customerDto);
+            modelAndView.addObject("message", "New customer created successfully");
+            return modelAndView;
         }
-        Customer customer = new Customer();
-        BeanUtils.copyProperties(customerDto, customer);
-        customerService.save(customer);
-        model.addAttribute("customerList", customerDto);
-        model.addAttribute("message", "Add new Successful!");
-        return "redirect:/customer";
     }
     @GetMapping("/edit/{id}")
     public ModelAndView editCustomer(@PathVariable int id){
