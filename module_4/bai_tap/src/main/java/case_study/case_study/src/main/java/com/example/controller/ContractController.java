@@ -77,6 +77,30 @@ public class ContractController {
     return "redirect:/contracts";
 
 }
+    @GetMapping("/add-contract-detail")
+    public String returnList(){
+        return "redirect:/contracts";
+    }
+    @PostMapping("/add-contract-detail")
+    public String saveDetail(@ModelAttribute @Validated ContractDetailDto contractDetailDto,BindingResult bindingResult,@PageableDefault(value = 3) Pageable pageable,Model model, RedirectAttributes redirectAttributes) {
+        if(bindingResult.hasFieldErrors()){
+            model.addAttribute("contractList",contractSerivice.getListContract(pageable));
+            model.addAttribute("attachFacilityList",contractSerivice.findAllAttachFacility());
+            model.addAttribute("contractDetailList",contractDetailService.findAll());
+            model.addAttribute("facilityList",facilityService.findAll());
+            model.addAttribute("employeeList",employeeService.findAll());
+            model.addAttribute("customerList",customerService.findAll());
+            model.addAttribute("contractDetailDto",contractDetailDto);
+            model.addAttribute("contractDto", new ContractDto());
+            return "contract/list";
+        }
+
+        ContractDetail contractDetail = new ContractDetail();
+        BeanUtils.copyProperties(contractDetailDto,contractDetail);
+        contractDetailService.save(contractDetail);
+        redirectAttributes.addFlashAttribute("message", "Thêm mới hợp đồng chi tiết thành công!");
+        return "redirect:/contracts";
+    }
 
 
 
