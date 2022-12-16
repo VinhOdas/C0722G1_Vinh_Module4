@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+</head>
+<body><center>
+<form method="post" action="/add" th:object="${suatChieuDto}" style="width: 30%; height: 50%" >
+    <div class="mb-5 mt-3 text-center fst-italic">
+        <h1>Them moi phim</h1>
+    </div>
+    <div class="mb-3">
+        <label for="maSuatChieu" class="form-label fw-bold fst-italic" style="background: aqua">Mã suất chiếu:</label>
+        <input th:field="*{id}" type="text" class="form-control" id="maSuatChieu" aria-describedby="nameError">
+        <p style="color: red" th:errors="*{id}" th:if="${#fields.hasErrors('id')}"></p>
+    </div>
+    <div class="mb-3">
+        <label for="phim" class="form-label fw-bold fst-italic" style="background: darkgray">Tên Phim</label>
+        <select th:field="*{phim}" id="phim" class="form-select" aria-label="Default select example">
+            <option th:each="item : ${phimList}"
+                    th:value="${item.id}"
+                    th:text="${item.name}">
+            </option>
+        </select>
+        <p style="color: red" th:errors="*{phim}" th:if="${#fields.hasErrors('phim')}"></p>
+    </div>
+
+    <div class="mb-3">
+        <label for="ngayChieu" style="background: aquamarine" class="form-label fw-bold fst-italic">Ngày Chiếu :</label>
+        <input th:field="*{ngayChieu}" type="date" class="form-control" id="ngayChieu" aria-describedby="nameError">
+        <p style="color: red" th:errors="*{ngayChieu}" th:if="${#fields.hasErrors('ngayChieu')}"></p>
+    </div>
+    <div class="mb-3">
+        <label for="soLuongVe" style="background: blanchedalmond" class="form-label fw-bold fst-italic">soLuongVe :</label>
+        <input th:field="*{soLuongVe}" type="number" class="form-control" id="soLuongVe" aria-describedby="nameError">
+        <p style="color: red" th:errors="*{soLuongVe}" th:if="${#fields.hasErrors('soLuongVe')}"></p>
+    </div>
+
+    <button type="submit" class="btn btn-info mb-3 w30">Add r</button>
+</form>
+</center>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</html>
